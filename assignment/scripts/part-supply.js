@@ -51,25 +51,23 @@ console.log(addparts);
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
 
 //let i = 0
-let supplyChanges1 = [3, 5, -6, 0, 7, 11]
+//let supplyChanges1 = [3, 5, -6, 0, 25]
 
-var positive = []//supplyChanges.filter((num) => num > 0);
-var negative =[] //supplyChanges.filter((num) => num <0);
-var zero = []//supplyChanges.filter((num) => num ==0);
+let positives = []//supplyChanges.filter((num) => num > 0);
+let negatives =[] //supplyChanges.filter((num) => num <0);
+let zeroes = []//supplyChanges.filter((num) => num ==0);
 
-for(let i=0;i<supplyChanges1.length; i++)
+for(let i=0;i<supplyChanges.length; i++)
 {
-  if (supplyChanges1[i]>0){positive[supplyChanges1.push(i)];}
-  //else if (supplyChanges1[i]<0){negative++;}
-  //else if (supplyChanges1[i]==0){zero++;}
-  
+  if (supplyChanges[i]>0){positives.push(supplyChanges[i]);}
+  else if (supplyChanges[i]<0){negatives.push(supplyChanges[i])}
+  else    {zeroes.push(supplyChanges[i])}
 
-}
+  }
 
-
-console.log(positive);
-console.log(negative);
-//console.log(zero);
+  console.log(positives);
+  console.log(negatives);
+  console.log(zeroes);
 
 
 
